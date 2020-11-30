@@ -3727,4 +3727,14 @@ ul.comments-list ul.comment-children ul .comment-body .comment {
   visibility: hidden;
 }
 
+.telephone {
+  display: inline-block;
+}
+.telephone a {
+  color:#fff;
+  font-size: 20px;
+  margin-left: 25px;
+  font-family: inherit;
+}
+
 /*# sourceMappingURL=style.css.map */
