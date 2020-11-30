@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'uristicon';
+  src:  url('../assets/css/fonts/fontsurist/uristicon.eot?qnijbe');
+  src:  url('../assets/css/fonts/fontsurist/uristicon.eot?qnijbe#iefix') format('embedded-opentype'),
+    url('../assets/css/fonts/fontsurist/uristicon.ttf?qnijbe') format('truetype'),
+    url('../assets/css/fonts/fontsurist/uristicon.woff?qnijbe') format('woff'),
+    url('../assets/css/fonts/fontsurist/uristicon.svg?qnijbe#uristicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconurist-"]::before, [class*=" iconurist-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'uristicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconurist-archive:before {
+  content: "\e900";
+}
+.iconurist-arrow-alt-right:before {
+  content: "\e901";
+}
+.iconurist-backpack:before {
+  content: "\e902";
+}
+.iconurist-balance-scale-left:before {
+  content: "\e903";
+}
+.iconurist-ballot-check:before {
+  content: "\e904";
+}
+.iconurist-blanket:before {
+  content: "\e905";
+}
+.iconurist-book-reader:before {
+  content: "\e906";
+}
+.iconurist-book:before {
+  content: "\e907";
+}
+.iconurist-clipboard-user:before {
+  content: "\e908";
+}

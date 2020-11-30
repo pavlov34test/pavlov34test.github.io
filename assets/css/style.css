@@ -100,6 +100,7 @@ body {
   color: #999999;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: -62px;
 }
 .wrapper {
   background-color: #f9f9f9;
@@ -359,7 +360,7 @@ ul {
 }
 section {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   overflow: hidden;
 }
 /* All margin */
@@ -2358,8 +2359,8 @@ section {
 }
 /* Footer Widgets */
 .footer-widget {
-  padding-top: 110px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 .footer-widget .footer--widget-title h5 {
   color: #ffffff;
@@ -3721,6 +3722,9 @@ ul.comments-list ul.comment-children ul .comment-body .comment {
 }
 .body-boxed .col-content {
   padding: 90px;
+}
+.footer--widget-recent {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
