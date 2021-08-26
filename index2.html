@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Слайдер на CSS пример 3</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+
+<section id="slider_bl">
+	<div class="wrapper">
+	  <input checked type=radio name="slider" id="slide1" />
+	  <input type=radio name="slider" id="slide2" />
+	  <input type=radio name="slider" id="slide3" />
+	  <input type=radio name="slider" id="slide4" />
+	  <div class="slider-wrapper">
+	    <div class=inner>
+	      <article>
+	        <div class="info top-left">
+	          <h3>Слайдер 1</h3></div>
+	        <img src="https://obninsksite.ru/assets/theme/images/blog/slider/1.jpg" />
+	      </article>
+	      <article>
+	        <div class="info bottom-right">
+	          <h3>Слайдер 2</h3></div>
+	        <img src="https://obninsksite.ru/assets/theme/images/blog/slider/2.jpg" />
+	      </article>
+	      <article>
+	        <div class="info bottom-left">
+	          <h3>Слайдер 3</h3></div>
+	        <img src="https://obninsksite.ru/assets/theme/images/blog/slider/3.jpg" />
+	      </article>
+	      <article>
+	        <div class="info top-right">
+	          <h3>Слайдер 4</h3></div>
+	        <img src="https://obninsksite.ru/assets/theme/images/blog/slider/4.jpg" />
+	      </article>
+	    </div>
+	  </div>
+	  <div class="slider-prev-next-control">
+	    <label for=slide1></label>
+	    <label for=slide2></label>
+	    <label for=slide3></label>
+	    <label for=slide4></label>
+	  </div>
+	  <div class="slider-dot-control">
+	    <label for=slide1></label>
+	    <label for=slide2></label>
+	    <label for=slide3></label>
+	    <label for=slide4></label>
+	  </div>
+	</div>
+</section>
+
+<style>
+    #slider_bl .wrapper{max-width:60em;margin:1em auto;position:relative}#slider_bl input{display:none}#slider_bl .inner{width:500%;line-height:0}#slider_bl article{width:20%;float:left;position:relative}#slider_bl article img{width:100%}#slider_bl .slider-prev-next-control{height:50px;position:absolute;top:50%;width:100%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#slider_bl .slider-prev-next-control label{display:none;width:40px;height:40px;border-radius:50%;background:#fff;opacity:.7}#slider_bl .slider-prev-next-control label:hover{opacity:1}#slider_bl .slider-dot-control{position:absolute;width:100%;bottom:0;text-align:center}#slider_bl .slider-dot-control label{cursor:pointer;border-radius:5px;display:inline-block;width:10px;height:10px;background:#bbb;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}#slider_bl .slider-dot-control label:hover{background:#ccc;border-color:#777}#slider_bl .info{position:absolute;font-style:italic;line-height:20px;opacity:0;color:#000;text-align:left;-webkit-transition:all 1s ease-out .6s;-moz-transition:all 1s ease-out .6s;transition:all 1s ease-out .6s}#slider_bl .info h3{color:#fcfff4;margin:0 0 5px;font-weight:400;font-size:1.5em;font-style:normal}#slider_bl .info.top-left{top:30px;left:30px}#slider_bl .info.top-right{top:30px;right:30px}#slider_bl .info.bottom-left{bottom:30px;left:30px}#slider_bl .info.bottom-right{bottom:30px;right:30px}#slider_bl .slider-wrapper{width:100%;overflow:hidden;border-radius:5px;box-shadow:1px 1px 4px #666;background:#fff;background:#fcfff4;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}#slider_bl .slider-wrapper .inner{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-transition:all .8s cubic-bezier(.77,0,.175,1);-moz-transition:all .8s cubic-bezier(.77,0,.175,1);transition:all .8s cubic-bezier(.77,0,.175,1)}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{font-family:FontAwesome;font-style:normal;font-weight:400;text-decoration:inherit;margin:0;line-height:38px;font-size:3em;display:block;color:#777}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after{content:"\f105";padding-left:15px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1){display:block;float:right;margin-right:5px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5),#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1),#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2),#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3),#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4){display:block;float:left;margin-left:5px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{content:"\f104";padding-left:8px}#slider_bl #slide1:checked~.slider-dot-control label:nth-child(1),#slider_bl #slide2:checked~.slider-dot-control label:nth-child(2),#slider_bl #slide3:checked~.slider-dot-control label:nth-child(3),#slider_bl #slide4:checked~.slider-dot-control label:nth-child(4),#slider_bl #slide5:checked~.slider-dot-control label:nth-child(5){background:#333}#slider_bl #slide1:checked~.slider-wrapper article:nth-child(1) .info,#slider_bl #slide2:checked~.slider-wrapper article:nth-child(2) .info,#slider_bl #slide3:checked~.slider-wrapper article:nth-child(3) .info,#slider_bl #slide4:checked~.slider-wrapper article:nth-child(4) .info,#slider_bl #slide5:checked~.slider-wrapper article:nth-child(5) .info{opacity:1}#slider_bl #slide1:checked~.slider-wrapper .inner{margin-left:0}#slider_bl #slide2:checked~.slider-wrapper .inner{margin-left:-100%}#slider_bl #slide3:checked~.slider-wrapper .inner{margin-left:-200%}#slider_bl #slide4:checked~.slider-wrapper .inner{margin-left:-300%}#slider_bl #slide5:checked~.slider-wrapper .inner{margin-left:-400%}@media only screen and (max-width:850px) and (min-width:450px){#slider_bl .slider-wrapper{border-radius:0}}@media only screen and (max-width:450px){#slider_bl .slider-wrapper{border-radius:0}#slider_bl .slider-wrapper .info{opacity:0}}@media only screen and (min-width:850px){#slider_bl body{padding:0 80px}}
+</style>
+</body>
+</html>
+
+
+
+<div class="content4">
+    <div class="content4-h1">
+      <h3>Lorem</h3>
+      <p>Lorem<br>Lorem ipsum</p>
+    </div>
+    <div class="content4-left-right-up">
+      <div class="content4-left-up">
+        <div class="content4-left-up-slider">
+          <section id="slider_bl">
+            <div class="wrapper">
+              <input checked type=radio name="slider" id="slide1" />
+              <input type=radio name="slider" id="slide2" />
+              <input type=radio name="slider" id="slide3" />
+              <input type=radio name="slider" id="slide4" />
+              <div class="slider-wrapper">
+                <div class=inner>
+                  <article>
+                    <div class="info top-left">
+                      <h3>Слайдер 1</h3></div>
+                    <img src="https://obninsksite.ru/assets/theme/images/blog/slider/1.jpg" />
+                  </article>
+                  <article>
+                    <div class="info bottom-right">
+                      <h3>Слайдер 2</h3></div>
+                    <img src="https://obninsksite.ru/assets/theme/images/blog/slider/2.jpg" />
+                  </article>
+                  <article>
+                    <div class="info bottom-left">
+                      <h3>Слайдер 3</h3></div>
+                    <img src="https://obninsksite.ru/assets/theme/images/blog/slider/3.jpg" />
+                  </article>
+                  <article>
+                    <div class="info top-right">
+                      <h3>Слайдер 4</h3></div>
+                    <img src="https://obninsksite.ru/assets/theme/images/blog/slider/4.jpg" />
+                  </article>
+                </div>
+              </div>
+              <div class="slider-prev-next-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+              </div>
+              <div class="slider-dot-control">
+                <label for=slide1></label>
+                <label for=slide2></label>
+                <label for=slide3></label>
+                <label for=slide4></label>
+              </div>
+            </div>
+          </section>
+          <style>
+              #slider_bl .wrapper{max-width:60em;margin:1em auto;position:relative}#slider_bl input{display:none}#slider_bl .inner{width:500%;line-height:0}#slider_bl article{width:20%;float:left;position:relative}#slider_bl article img{width:100%}#slider_bl .slider-prev-next-control{height:50px;position:absolute;top:50%;width:100%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}#slider_bl .slider-prev-next-control label{display:none;width:40px;height:40px;border-radius:50%;background:#fff;opacity:.7}#slider_bl .slider-prev-next-control label:hover{opacity:1}#slider_bl .slider-dot-control{position:absolute;width:100%;bottom:0;text-align:center}#slider_bl .slider-dot-control label{cursor:pointer;border-radius:5px;display:inline-block;width:10px;height:10px;background:#bbb;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}#slider_bl .slider-dot-control label:hover{background:#ccc;border-color:#777}#slider_bl .info{position:absolute;font-style:italic;line-height:20px;opacity:0;color:#000;text-align:left;-webkit-transition:all 1s ease-out .6s;-moz-transition:all 1s ease-out .6s;transition:all 1s ease-out .6s}#slider_bl .info h3{color:#fcfff4;margin:0 0 5px;font-weight:400;font-size:1.5em;font-style:normal}#slider_bl .info.top-left{top:30px;left:30px}#slider_bl .info.top-right{top:30px;right:30px}#slider_bl .info.bottom-left{bottom:30px;left:30px}#slider_bl .info.bottom-right{bottom:30px;right:30px}#slider_bl .slider-wrapper{width:100%;overflow:hidden;border-radius:5px;box-shadow:1px 1px 4px #666;background:#fff;background:#fcfff4;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-transition:all .5s ease-out;-moz-transition:all .5s ease-out;transition:all .5s ease-out}#slider_bl .slider-wrapper .inner{-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);-webkit-transition:all .8s cubic-bezier(.77,0,.175,1);-moz-transition:all .8s cubic-bezier(.77,0,.175,1);transition:all .8s cubic-bezier(.77,0,.175,1)}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{font-family:FontAwesome;font-style:normal;font-weight:400;text-decoration:inherit;margin:0;line-height:38px;font-size:3em;display:block;color:#777}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1)::after{content:"\f105";padding-left:15px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(2),#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(3),#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(4),#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(5),#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(1){display:block;float:right;margin-right:5px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5),#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1),#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2),#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3),#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4){display:block;float:left;margin-left:5px}#slider_bl #slide1:checked~.slider-prev-next-control label:nth-child(5)::after,#slider_bl #slide2:checked~.slider-prev-next-control label:nth-child(1)::after,#slider_bl #slide3:checked~.slider-prev-next-control label:nth-child(2)::after,#slider_bl #slide4:checked~.slider-prev-next-control label:nth-child(3)::after,#slider_bl #slide5:checked~.slider-prev-next-control label:nth-child(4)::after{content:"\f104";padding-left:8px}#slider_bl #slide1:checked~.slider-dot-control label:nth-child(1),#slider_bl #slide2:checked~.slider-dot-control label:nth-child(2),#slider_bl #slide3:checked~.slider-dot-control label:nth-child(3),#slider_bl #slide4:checked~.slider-dot-control label:nth-child(4),#slider_bl #slide5:checked~.slider-dot-control label:nth-child(5){background:#333}#slider_bl #slide1:checked~.slider-wrapper article:nth-child(1) .info,#slider_bl #slide2:checked~.slider-wrapper article:nth-child(2) .info,#slider_bl #slide3:checked~.slider-wrapper article:nth-child(3) .info,#slider_bl #slide4:checked~.slider-wrapper article:nth-child(4) .info,#slider_bl #slide5:checked~.slider-wrapper article:nth-child(5) .info{opacity:1}#slider_bl #slide1:checked~.slider-wrapper .inner{margin-left:0}#slider_bl #slide2:checked~.slider-wrapper .inner{margin-left:-100%}#slider_bl #slide3:checked~.slider-wrapper .inner{margin-left:-200%}#slider_bl #slide4:checked~.slider-wrapper .inner{margin-left:-300%}#slider_bl #slide5:checked~.slider-wrapper .inner{margin-left:-400%}@media only screen and (max-width:850px) and (min-width:450px){#slider_bl .slider-wrapper{border-radius:0}}@media only screen and (max-width:450px){#slider_bl .slider-wrapper{border-radius:0}#slider_bl .slider-wrapper .info{opacity:0}}@media only screen and (min-width:850px){#slider_bl body{padding:0 80px}}
+          </style>
+        </div>
+      </div>
+      <div class="content4-right-up">
+        <p>Lorem</p>
+        <p>Lorem ipsum </p>
+        <p>Lorem ipsum </p>
+        <p>Lorem ipsum </p>
+      </div>
+    </div>
+    <div class="content4-h2">
+      <div class="content4-h2-block1">
+        <p>Lorem</p>
+      </div>
+      <div class="content4-h2-block1">
+        <p>Lorem</p>
+      </div>
+      <div class="content4-h2-block1">
+        <p>Lorem</p>
+      </div>
+    </div>
+    <div class="conetent4-left-right-down">
+      <div class="content4-left-down">
+        <p>Lorem</p>
+        <p>Lorem</p>
+      </div>
+      <div class="content4-right-down">
+
+      </div>
+    </div>
+  </div>
+
+
+
+.content4 {
+    width: 100%;
+    height: 1450px;
+    background-color: rgb(53, 73, 245);
+    border 4px solid #000;
+  }
+  
+  .content4-h1 {
+    margin: 10px auto;
+    width: 1040px;
+    height: 250px;
+  }
+  
+  .content4-h1 h3 {
+    font-size: 35px;
+    margin: 35px 5px;
+  }
+  
+  .content4-h1 p {
+    font-size: 20px;
+    margin: 50px 80px;
+  
+  }
+  
+  .content4-left-right-up {
+    width: 1040px;
+    margin: 0px auto;
+  }
+  
+  .content4-left-up{
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    margin: -2px;
+  }
+  
+  .content4-right-up {
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    margin: -2px;
+  }
+  
+  .content4-h2 {
+    width: 1040px;
+    height: 200px;
+    margin: 0px auto;
+  }
+  
+  .conetent4-left-right-down {
+    width: 1040px;
+    margin: 0px auto;
+    height: 400px;
+  }
+  
+  .content4-left-down {
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    margin: -2px;
+    position: absolute;
+  }
+  
+  .content4-right-down {
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    margin: -2px;
+    background-repeat: no-repeat;
+    background-image: url(https://mykaleidoscope.ru/uploads/posts/2020-02/1581871937_48-p-dizain-dlya-studii-zvukozapisi-97.jpg);
+  }
+
+
+
+
+
+
+  <div class="content5">
+    <div class="content5-container">
+    <div class="content5-img1 content5-block">
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-block">
+      <p>01.</p>
+      <p>H1 lorem</p>
+      <p>Lorem</p>
+    </div>
+    <div class="content5-img2 content5-block"></div>
+  </div>
+  </div>
+
+  .content5 {
+    width: 100%;
+    height: 1200px;
+    background-color: floralwhite;
+    border 4px solid #000;
+  }
+  
+  .content5-container {
+    margin: 10px auto;
+    width: 1040px;
+  }
+  
+  .content5-img1 {
+    background-repeat: no-repeat;
+    background-image: url(https://mykaleidoscope.ru/uploads/posts/2020-02/1581871937_48-p-dizain-dlya-studii-zvukozapisi-97.jpg);
+  }
+  
+  .content5-block {
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+  }
+
+  
+
+
+  <div class="content7">
+    <div class="content7-wrapper">
+      <div class="content7-text1">
+
+      </div>
+      <div class="content7-img1">
+        
+      </div>
+      <div class="content7-img2">
+        
+      </div>
+      <div class="content7-text2">
+        
+      </div>
+      <div class="content7-text3">
+        
+      </div>
+    </div>
+  </div>
+
+  .content7 {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(67, 109, 247);
+    border: 1px solid #000;
+  }
+  
+  .content7-wrapper {
+    width: 1040px;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid #aba;
+    display: grid;
+    grid-template: 
+      [start] "text1 text1 img1" 550px [row2]
+      [row2] "img2 text2 text2" 400px [row3]
+      [row3] "text3 text3 text3" 250px [row-end] / 1fr 1fr 1fr;
+  }
+  
+  .content7-text1 {
+    grid-area: text1;
+  }
+  
+  .content7-img1 {
+    grid-area: img1;
+  }
+  
+  .content7-img2 {
+    grid-area: img2;
+  }
+  
+  .content7-text2 {
+    grid-area: text2;
+  }
+  
+  .content7-text3 {
+    grid-area: text3;
+  }
+  
+
+
+
+
+
+
+  <form id="contact-form" role='form' action="https://formspree.io/f/mleapgbg" method="POST">
+    <div class="form-group">
+        <label class="control-label" for="_subject">О чем Вы мне хотите написать?</label>
+        <input class="form-control" type="text" name="_subject" placeholder="Тема">
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="_replyto">На какой E-Mail вам ответить?</label>
+        <input class="form-control" type="email" name="_replyto" placeholder="E-Mail для ответа">
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="">Ваше сообщение:</label>
+        <textarea rows="10" class="form-control" name="body" placeholder="Ваше сообщение"></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Отправить"> или <a class="trg-ml" href="#">написать мне напрямую</a>
+</form>
+
+
+
+
+
+
+
+---------------
+
+
+
+
+
+  <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mleapgbg" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      <label for="department">Location</label>
+      <select name="department" id="department" required="">
+        <option value="Select" selected="" disabled="">Select</option>
+        <option value="Front Desk">Central</option>
+        <option value="Customer Care">West</option>
+      </select>
+      <label for="telephone">Telephone Number</label>
+      <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+      <label for="complaint">Complaint</label>
+      <textarea rows="6" name="complaint" id="complaint" placeholder="Your text." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form><style>/* reset */
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm label,
+  #fs-frm #card-element:disabled {
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  #fs-frm label,
+  #fs-frm legend,
+  #fs-frm ::placeholder {
+    font-size: .825rem;
+    margin-bottom: .5rem;
+    padding-top: .2rem;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  /* border, padding, margin, width */
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm #card-element {
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.9);
+    padding: .75em 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #fs-frm input:focus,
+  #fs-frm select:focus,
+  #fs-frm textarea:focus {
+    background-color: white;
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: gray;
+    outline-offset: -1px;
+  }
+  #fs-frm [type="text"],
+  #fs-frm [type="email"] {
+    width: 100%;
+  }
+  #fs-frm [type="button"],
+  #fs-frm [type="submit"],
+  #fs-frm [type="reset"] {
+    width: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  }
+  #fs-frm [type="button"]:focus,
+  #fs-frm [type="submit"]:focus,
+  #fs-frm [type="reset"]:focus {
+    outline: none;
+  }
+  #fs-frm [type="submit"],
+  #fs-frm [type="reset"] {
+    margin-bottom: 0;
+  }
+  #fs-frm select {
+    text-transform: none;
+  }
+  
+  #fs-frm [type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+    margin: 0 .5em 0 0 !important;
+  }
+  
+  #fs-frm [type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+  }
+  
+  /* address, locale */
+  #fs-frm fieldset.locale input[name="city"],
+  #fs-frm fieldset.locale select[name="state"],
+  #fs-frm fieldset.locale input[name="postal-code"] {
+    display: inline;
+  }
+  #fs-frm fieldset.locale input[name="city"] {
+    width: 52%;
+  }
+  #fs-frm fieldset.locale select[name="state"],
+  #fs-frm fieldset.locale input[name="postal-code"] {
+    width: 20%;
+  }
+  #fs-frm fieldset.locale input[name="city"],
+  #fs-frm fieldset.locale select[name="state"] {
+    margin-right: 3%;
+  }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-family: "LibelSuitRg";
+
+
+
+
+
+
+font-family: "DidactGothic";
+
+
+box-shadow: 0px 25px 32px 0px rgba(137, 82, 73, .19);
+
+
+
+border: 1px solid rgba(255, 255, 255, 0.01);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
