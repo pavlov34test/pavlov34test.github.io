@@ -450,11 +450,6 @@ Footer - - - - */
   background-size: cover;
 }
 
-.footer-button button{
-  display: grid;
-  width: 100%;
-  margin: 10px 0px;
-}
 
 
 /* - - - - Footer
@@ -604,7 +599,7 @@ Footer - - - - */
   height: 550px;
   display: inline-block;
   margin-left: 4px;
-  background-image: url(https://mykaleidoscope.ru/uploads/posts/2020-02/1581871937_48-p-dizain-dlya-studii-zvukozapisi-97.jpg);
+  background-image: url(/img/home.png);
   background-repeat: no-repeat;
 }
 
@@ -880,7 +875,7 @@ img:nth-child(5) {
 
 .content5-div8 {
   grid-area: div8;
-  background-image: url(/img/laque.png);
+  background-image: url(/img/choose.png);
   background-repeat: no-repeat;
 }
 
@@ -984,6 +979,11 @@ img:nth-child(5) {
   font-size: 16px;
   margin: 20px 0px;
   text-align: justify;
+}
+
+.content8-price ul li:nth-child(6) {
+  margin: 0px 0px;
+  margin-top: 40px;
 }
 
 .content8-price button {
@@ -1273,11 +1273,15 @@ Media Queries   - - - - */
 }
 
 .footer-button button{
-  display: grid;
-  width: 40%;
-  margin: 0px 0px;
   justify-content: center;
 }
+
+.footer-button a {
+  display: grid;
+  margin: 10px auto;
+}
+
+
 
 .footer-info-text {
   margin: 20px 2%;
