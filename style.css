@@ -1,3 +1,18 @@
+:root {
+  --DidactGothic: "Baskerville";
+  --LibelSuitRg: "Kefa";
+  --Cursive: "SignPainter";
+  --Colorbutton: #50a5ad;
+  --Colorhover: darkslateblue;
+  --Colorfont: #97c5ad;
+  --Colorbuttonhover: #50887f;
+  --Colorfooterhover: #50a5ad;
+  --Trans: all .4s linear;
+  --Borderhide: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+
+
 @font-face {
   font-family: "Astra";
   src: url(fonts/astra.woff) format("woff"), url(fonts/astra.ttf) format("truetype"), url(/fonts/astra.svg#astra) format("svg");
@@ -16,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'LibelSuitRg';
+  font-family: var(--LibelSuitRg);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -25,7 +40,7 @@
 }
 
 @font-face {
-  font-family: 'LibelSuitRg';
+  font-family: var(--LibelSuitRg);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -34,7 +49,7 @@
 }
 
 @font-face {
-  font-family: 'DidactGothic';
+  font-family: var(--DidactGothic);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -63,8 +78,8 @@
   margin:-1px;
   padding:0px;
   font-size: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.01);
-  color: #000;
+  border: var(--Borderhide);
+  color: black;
   text-decoration: none;
   list-style:none;
 }
@@ -74,32 +89,32 @@ body {
 }
 
 p {
-  font-family: "DidactGothic", roboto;
+  font-family: var(--DidactGothic), roboto;
 }
 
 h1 {
-  font-family: "LibelSuitRg",roboto;
+  font-family: var(--LibelSuitRg),roboto;
 }
 
 a:hover {
-  color:#50887f;
-  transition: all .4s linear;
+  color:var(--Colorbuttonhover);
+  transition: var(--Trans);
 }
 
 button {
   border: none; outline: none;
   padding: 9px 40px;
-  background-color: #50a5ad;
+  background-color: var(--Colorbutton);
   height: 35px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   transition: all .3s linear;
-  color: #fff;
+  color: white;
 }
 
 button:hover {
   color:rgb(255, 255, 255);
-  background-color: darkslateblue;
-  transition: all .4s linear;
+  background-color: var(--Colorhover);
+  transition: var(--Trans);
 }
 
 .block {
@@ -110,33 +125,17 @@ button:hover {
 
 
 
-/* - - - -  
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Header - - - - */
+/* Header */
 
 
 header {
   width: 100%;
   height: 75px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   position: fixed;
   z-index: 10;
   margin-top: -4px;
-  font-family: "LibelSuitRg", roboto;
+  font-family: var(--LibelSuitRg), roboto;
 }
 
 .container {
@@ -164,13 +163,13 @@ header {
 
 .nav-menu li a {
  font-size: 20px;
- color:#50a5ad;
+ color:var(--Colorbutton);
 }
 
 .nav-menu li a:hover {
   font-size: 20px;
-  color:darkslateblue;
-  transition: all .4s linear;
+  color:var(--Colorhover);
+  transition: var(--Trans);
  }
 
 .nav-list a {
@@ -189,23 +188,23 @@ header {
   padding: 0px 5px;
   display: inline-block;
   line-height: 1.8;
-  color: #839595;
+  color: var(--Colorbutton);
 }
 
 .nav-adress ul li a{
   font-size: 15px;
-  color: #50a5ad; 
+  color: var(--Colorbutton); 
 }
 
 .nav-adress ul li a img:hover {
   background-color: rgba(61, 193, 202, 0.2);
-  transition: all .4s linear;
+  transition: var(--Trans);
 }
 
 .nav-adress ul li a:hover{
   font-size: 15px;
-  transition: all .4s linear;
-  color: darkslateblue; 
+  transition: var(--Trans);
+  color: var(--Colorhover); 
   
 }
 
@@ -298,14 +297,14 @@ Footer - - - - */
 .footer-contact {
   width: 100%;
   height: 320px;
-  background-color: #50887f;
+  background-color: var(--Colorbuttonhover);
 }
 
 .footer-contactwrapper {
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   width: 1040px;
   margin: 0px auto;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   display: grid;
   grid-template: 
     [start] "contact0 contact0 contact0" 100px [row2]
@@ -314,7 +313,7 @@ Footer - - - - */
 
 .footer-contact0 {
   grid-area: contact0;
-  color: #fff;
+  color: white;
   font-size: 54px;
   margin: 10px 2px;
 }
@@ -338,13 +337,8 @@ Footer - - - - */
 }
 
 .footer-contact1img:hover {
-  filter: brightness(80%);
-  transition: all .4s linear;
-}
-
-.footer-contact1img:active {
   filter: brightness(100%);
-  transition: all .1s linear;
+  transition: var(--Trans);
   width: 100%;
   height: 600px;
   margin-left: 129px;
@@ -353,20 +347,21 @@ Footer - - - - */
 }
 
 .footer-contact1 p {
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
   font-size: 23px;
   margin: 15px 0px;
 }
 
 .footer-contact1 p a {
-  color: #fff;
+  color: white;
   font-size: 16px;
 }
 
 .footer-contact1 p a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorfooterhover);
+  transition: var(--Trans);
+  
 }
 
 .footer-contact2 {
@@ -374,18 +369,18 @@ Footer - - - - */
 }
 
 .footer-contact2 p a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorfooterhover);
+  transition: var(--Trans);
 }
 
 .footer-contact2 p a {
-  color: #fff;
+  color: white;
   font-size: 16px;
 }
 
 .footer-contact2 p {
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
   font-size: 23px;
   margin: 15px 60px;
 }
@@ -403,7 +398,7 @@ Footer - - - - */
 }
 
 .footer-info-text p {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   font-size: 11px;
   color: rgba(0, 0, 0, .59);
   margin: 0px 30px;
@@ -420,8 +415,8 @@ Footer - - - - */
 }
 
 .footer-info-text>ul>ul li a:hover{
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorfooterhover);
+  transition: var(--Trans);
 }
 
  .footer-developer {
@@ -478,8 +473,6 @@ Footer - - - - */
 .content1 {
   width: 100%;
   height: 830px;
-  background-color: rgb(112, 222, 255);
-  border 4px solid #000;
   background-image: url(/img/background1.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -490,7 +483,7 @@ Footer - - - - */
   width: 600px;
   height: 500px;
   margin: 170px 260px;
-  border: 10px solid #50a5ad;
+  border: 10px solid var(--Colorbutton);
 }
 
 .content1-offer-h1 {
@@ -500,7 +493,7 @@ Footer - - - - */
 .content1-offer h1 {
   font-size: 51px;
   line-height: 1.4em;
-  color: #fff;
+  color: white;
 }
 
 .content1-offer-text1 {
@@ -510,8 +503,8 @@ Footer - - - - */
 .content1-offer-text1 p {
   font-size: 30px;
   line-height: 1.4em;
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
 }
 
 .content1-offer-text2 {
@@ -521,8 +514,8 @@ Footer - - - - */
 .content1-offer-text2 p {
   font-size: 15px;
   margin: 10px 0px;
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
 }
 
 .content1-offer button {
@@ -530,14 +523,14 @@ Footer - - - - */
   width: 200px;
   height: 50px;
   font-size: 16px;
-  color: #fff;
+  color: white;
 }
 
 .content2 {
   width: 100%;
   height: 740px;
-  background-color: #98c5ad;
-  border 4px solid #000;
+  background-color: var(--Colorfont);
+
   margin-top: -2px;
   border-top: 1px solid #cfc;
 }
@@ -560,15 +553,15 @@ Footer - - - - */
   width: 320px;
   height: 450px;
   margin: 60px -100px 60px 100px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .content2-container-left-message p:first-child{
   font-size: 23px;
-  color: #000;
+  color: black;
   margin: 40px 35px;
   text-align: left;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
 }
 
 .content2-container-left-message hr{
@@ -576,14 +569,14 @@ Footer - - - - */
   margin-top: -30px;
   width: 300px;
   height: 2px;
-  background-color: #50a5ad;
+  background-color: var(--Colorbutton);
 }
 
 
 .content2-container-left-message>p{
   margin: 35px 30px;
   font-size: 14px;
-  color: #000;
+  color: black;
   line-height: 1.8em;
   text-align: center;
 }
@@ -592,7 +585,7 @@ Footer - - - - */
   width: 160px;
   height: 45px;
   margin: 9px 76px;
-  color: #fff;
+  color: white;
   font-size: 15px;
   box-shadow: 0px 25px 32px 0px rgba(137, 82, 73, .19);
 }
@@ -611,13 +604,12 @@ Footer - - - - */
   width: 100%;
   height: 650px;
   background-color: floralwhite;
-  border 4px solid #000;
 }
 
 .content3-wrapper {
   width: 1040px;
   margin: 15px auto;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   padding: 30px;
   display: grid;
   grid-template: 
@@ -631,7 +623,7 @@ Footer - - - - */
 
 .content3-div2 {
   grid-area: div2;
-  background-color: #50a5ad;
+  background-color: var(--Colorbutton);
   text-align: -webkit-center;
 }
 
@@ -642,7 +634,7 @@ Footer - - - - */
 .content3-div1 h2 {
   font-size: 35px;
   margin: 90px 20px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
 }
 
 .content3-div1 p {
@@ -652,13 +644,13 @@ Footer - - - - */
 
 .content4-background {
   width: 100%;
-  background-color: #88c6aa;
+  background-color: var(--Colorfont);
 }
 
 .content4-wrapper {
   width: 1040px;
   margin: 0px auto;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   padding: 30px;
   display: grid;
   grid-template: 
@@ -678,13 +670,13 @@ Footer - - - - */
 
 .content4-header1 h3 {
   font-size: 30px;
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
   font-size: 54px;
 }
 
 .content4-header1 p {
-  color: #fff;
+  color: white;
   font-size: 18px;
   margin: 15px 60px;
 }
@@ -711,17 +703,17 @@ html, body {
 .content4-side2 p {
   margin: 12px 10px;
   font-size: 19px;
-  color: #fff;
+  color: white;
 }
 
 .content4-side2 p a {
-  color: #000;
+  color: black;
   font-size: 15px;
 }
 
 .content4-side2 p a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorbuttonhover);
+  transition: var(--Trans);
 }
 
 
@@ -829,8 +821,8 @@ img:nth-child(2){animation-delay:10s}
   font-size: 40px;
   margin: 50px 50px;
   line-height: 1.4em;
-  font-family: "LibelSuitRg";
-  color: #fff;
+  font-family: var(--LibelSuitRg);
+  color: white;
 }
 
 .content4-side3 {
@@ -841,7 +833,7 @@ img:nth-child(2){animation-delay:10s}
   margin: 90px 20px;
   font-size: 23px;
   line-height: 1.4;
-  color: #fff;
+  color: white;
 }
 
 .content4-side4 {
@@ -855,7 +847,7 @@ img:nth-child(2){animation-delay:10s}
 .content5-wrapper {
   width: 1040px;
   margin: 30px auto;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   padding: 10px;
   display: grid;
   grid-template: 
@@ -870,12 +862,12 @@ img:nth-child(2){animation-delay:10s}
 .content5-div1 p {
   font-size: 30px;
   margin: 20px 5px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
 }
 
 .content5-div1 p:last-child {
   font-family: "DearJoe";
-  color: #50a5ad;
+  color: var(--Colorbutton);
   font-size: 80px;
   margin: 10px 25px;
 }
@@ -917,14 +909,14 @@ img:nth-child(2){animation-delay:10s}
 
 .content5-bigp {
   font-size: 60px;
-  color: #50a5ad;
-  font-family: "LibelSuitRg";
+  color: var(--Colorbutton);
+  font-family: var(--LibelSuitRg);
 }
 
 .content5-p1 {
   margin: 10px 0px;
   font-size: 20px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
 }
 
 .content5-p2 {
@@ -935,15 +927,14 @@ img:nth-child(2){animation-delay:10s}
 .content6 {
   width: 100%;
   height: 140px;
-  background-color: #d1eedf;
-  border 4px solid #000;
+  background-color: var(--Colorfont);
 }
 
 .content6-wrapper {
   width: 1040px;
   margin: 0px auto;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   display: grid;
   grid-template: 
     [start] "text buton" 140px [row-end] / 2fr 1fr;
@@ -954,7 +945,7 @@ img:nth-child(2){animation-delay:10s}
 }
 
 .content6-text p:first-child {
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   font-size: 39px;
   text-align: left;
   margin: 18px 0px;
@@ -964,7 +955,7 @@ img:nth-child(2){animation-delay:10s}
   font-size: 19px;
   text-align: left;
   margin: 18px 0px;
-  color: #717171;
+  color: var(--Colorhover);
 }
 
 .content6-buton {
@@ -991,7 +982,7 @@ img:nth-child(2){animation-delay:10s}
   width: 1040px;
   margin: 0px auto;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  border: var(--Borderhide);
   display: grid;
   grid-template: 
     [start] "price img" 550px [row-end] / 1fr 1fr;
@@ -1002,7 +993,7 @@ img:nth-child(2){animation-delay:10s}
 }
 
 .content8-price h4 {
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   font-size: 38px;
   line-height:1.1em;
   margin: 45px 0px;
@@ -1011,7 +1002,7 @@ img:nth-child(2){animation-delay:10s}
 }
 
 .content8-price ul li {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   font-size: 16px;
   margin: 20px 0px;
   text-align: justify;
@@ -1072,7 +1063,7 @@ Media Queries   - - - - */
 @media (min-width: 1000px){
   nav {
     display: none;
-    font-family: "LibelSuitRg", roboto;
+    font-family: var(--LibelSuitRg), roboto;
   }
 }
 
@@ -1080,8 +1071,8 @@ Media Queries   - - - - */
 @media (max-width: 1000px)                          {
 
   a:hover {
-    color: #50887f;
-    transition: all .4s linear;
+    color: var(--Colorbuttonhover);
+    transition: var(--Trans);
   }
   
   button {
@@ -1158,7 +1149,7 @@ Media Queries   - - - - */
   }
   
   .nav-button button {
-    font-family: "LibelSuitRg";
+    font-family: var(--LibelSuitRg);
   }
 
   #mnu__toggle {
@@ -1251,12 +1242,12 @@ Media Queries   - - - - */
 
   .mnu__item:hover {
     background-color: #CFD8DC;
-    transition: all .4s linear;
+    transition: var(--Trans);
   }
 
   nav {
     height: 0px;
-    font-family: "LibelSuitRg", roboto;
+    font-family: var(--LibelSuitRg), roboto;
   }
 
   .nv_mnu {
@@ -1347,7 +1338,7 @@ Media Queries   - - - - */
 width: 1040px;
 margin: 150px auto;
 text-align: center;
-border: 1px solid rgba(255, 255, 255, 0.01);
+border: var(--Borderhide);
 display: grid;
 grid-template: 
   [start] "serviceshome-sheader serviceshome-sheader" 250px [row2]
@@ -1361,26 +1352,26 @@ grid-template:
 }
 
 .serviceshome-sheader h3 {
-  font-family: "LibelSuitRg",roboto;
+  font-family: var(--LibelSuitRg),roboto;
   font-size: 57px;
-  color: #000;
+  color: black;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .serviceshome-sheader p {
   font-size: 18px;
-  color: #000;
+  color: black;
   text-align: center;
 }
 
 .serviceshome-sheader a {
-  color: #50a5ad;
+  color: var(--Colorbutton);
 }
 
 .serviceshome-sheader a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorbuttonhover);
+  transition: var(--Trans);
 }
 
 .serviceshome-side1s {
@@ -1398,7 +1389,7 @@ grid-template:
 
 .serviceshome-side1s h5 {
  font-size: 36px;
- color: #fff;
+ color: white;
  margin-top: -250px;
  margin-left: 150px;
  position: absolute;
@@ -1409,7 +1400,7 @@ grid-template:
 .serviceshome-side1s p {
   margin: 30px auto;
   font-size: 17px;
-  color: #fff;
+  color: white;
   margin-top: -180px;
   margin-left: 124px;
   position: absolute;
@@ -1443,7 +1434,7 @@ grid-template:
 
 .serviceshome-side2s h5 {
  font-size: 36px;
- color: #fff;
+ color: white;
  margin-top: -250px;
  margin-left: 150px;
  position: absolute;
@@ -1454,7 +1445,7 @@ grid-template:
 .serviceshome-side2s p {
   margin: 30px auto;
   font-size: 17px;
-  color: #fff;
+  color: white;
   margin-top: -180px;
   margin-left: 50px;
   position: absolute;
@@ -1487,7 +1478,7 @@ grid-template:
 
 .serviceshome-side3s h5 {
   font-size: 36px;
-  color: #fff;
+  color: white;
   margin-top: -250px;
   margin-left: 134px;
   position: absolute;
@@ -1498,7 +1489,7 @@ grid-template:
 .serviceshome-side3s p {
   margin: 30px auto;
   font-size: 17px;
-  color: #fff;
+  color: white;
   margin-top: -180px;
   margin-left: 138px;
   position: absolute;
@@ -1532,7 +1523,7 @@ grid-template:
 
 .serviceshome-side4s h5 {
   font-size: 36px;
-  color: #fff;
+  color: white;
   margin-top: -250px;
   margin-left: 160px;
   position: absolute;
@@ -1543,7 +1534,7 @@ grid-template:
 .serviceshome-side4s p {
   margin: 30px auto;
   font-size: 17px;
-  color: #fff;
+  color: white;
   margin-top: -180px;
   margin-left: 122px;
   position: absolute;
@@ -1577,7 +1568,7 @@ grid-template:
 
 .serviceshome-side5s h5 {
   font-size: 36px;
-  color: #fff;
+  color: white;
   margin-top: -250px;
   margin-left: 39px;
   position: absolute;
@@ -1588,7 +1579,7 @@ grid-template:
 .serviceshome-side5s p {
   margin: 30px auto;
   font-size: 17px;
-  color: #fff;
+  color: white;
   margin-top: -180px;
   margin-left: 82px;
   position: absolute;
@@ -1643,16 +1634,16 @@ grid-template:
 
 .servbeard ul li {
   display: inline-block;
-  font-family: "DidactGothic";
-  color: #50a5ad;
+  font-family: var(--DidactGothic);
+  color: var(--Colorbutton);
 }
 
 .servbeard ul li a{
-  color: #50a5ad;
+  color: var(--Colorbutton);
 }
 
 .servbeard ul li:last-child{
-  color: #50887f;
+  color: var(--Colorbuttonhover);
 }
 
 .serv1 {
@@ -1732,8 +1723,8 @@ grid-template:
 }
 
 .serv2 h4 {
-  font-size: 45px;
-  font-family: "LibelSuitRg";
+  font-size: 38px;
+  font-family: var(--LibelSuitRg);
   margin: 10px 30px;
 }
 
@@ -1743,28 +1734,30 @@ grid-template:
 }
 
 .serv2 p:last-child a {
-  color: #50a5ad;
+  color: var(--Colorbutton);
 }
 
 .serv2 p:last-child a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorbuttonhover);
+  transition: var(--Trans);
 }
 
 #manicure {
   font-size: 20px;
-  font-family: "LibelSuitRg";
+  font-family: var(--Cursive);
   margin: 10px 30px;
 }
 
 .serv2 ul li{
   display: inline-block;
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   margin: 10px 30px;
 }
 
+
+
 .serv2 p {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   margin: 10px 30px;
 }
 
@@ -1775,7 +1768,7 @@ grid-template:
 
 .serv3 h4 {
   font-size: 42px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   margin: 30px auto;
 }
 
@@ -1805,11 +1798,7 @@ grid-template:
   font-size: 14px;
 }
 
-.pricelist a {
-  color: #bd26a4;
-  font-size: 19px;
-  
-}
+
 
 
 /*BLOG*/
@@ -1828,22 +1817,22 @@ grid-template:
 
 .bloghead {
   grid-area: bloghead;
-  background-color: #50887f;
+  background-color: var(--Colorbuttonhover);
 }
 
 .bloghead h2 {
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   font-size: 80px;
   margin-top: 50px;
   padding: 20px;
-  color: #fff;
+  color: white;
 }
 
 .bloghead p {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   font-size: 18px;
   margin: 10px;
-  color: #fff;
+  color: white;
 }
 
 .blogimg {
@@ -1900,45 +1889,45 @@ grid-template:
 .iconpost {
  height: 30px;
  width: 90px;
- background-color: #50a5ad;
- color: #fff;
+ background-color: var(--Colorbutton);
+ color: white;
  font-size: 16px;
  padding-top: 8px;
  text-align: center;
 }
 
 .textpost {
-  background-color: #50a5ad;
+  background-color: var(--Colorbutton);
 
 }
 
 .textpost h3 {
   font-size: 27px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
   padding: 10px;
 }
 
 .textpost p {
   font-size: 16px;
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   padding: 10px;
 }
 
 .textpost a {
   font-size: 16px;
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   color: #d1eedf;
   padding: 10px;
 }
 
 .datepost {
-  background-color: #50a5ad;
-  border-top: 1px solid #fff;
+  background-color: var(--Colorbutton);
+  border-top: 1px solid white;
 }
 
 .datepost p {
   font-size: 16px;
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   padding: 10px;
 }
 
@@ -1963,7 +1952,7 @@ grid-template:
 
 .cont1 h3 {
   font-size: 39px;
-  font-family: "LibelSuitRg";
+  font-family: var(--LibelSuitRg);
 }
 
 .cont2 {
@@ -1976,7 +1965,7 @@ grid-template:
 }
 
 .cont3 p {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   font-size: 19px;
   margin: 20px 20px;
 }
@@ -1995,8 +1984,8 @@ grid-template:
 }
 
 .cont3 p a:hover {
-  color: #50887f;
-  transition: all .4s linear;
+  color: var(--Colorbuttonhover);
+  transition: var(--Trans);
 
 }
 
@@ -2006,7 +1995,7 @@ grid-template:
 }
 
 .cont4 p {
-  font-family: "DidactGothic";
+  font-family: var(--DidactGothic);
   font-size: 19px;
   margin: 20px 20px;
 }
@@ -2017,7 +2006,7 @@ grid-template:
 
 .cont5 {
   grid-area: cont5;
-  background-color: #50a5ad; 
+  background-color: var(--Colorbutton); 
 }
 
 
@@ -2031,7 +2020,7 @@ grid-template:
             #fs-frm optgroup,
             #fs-frm label,
             #fs-frm #card-element:disabled {
-              font-family: "LibelSuitRg";
+              font-family: var(--LibelSuitRg);
               font-size: 100%;
               color: inherit;
               border: none;
@@ -2042,7 +2031,7 @@ grid-template:
               margin: 0 auto;
               -webkit-appearance: none;
               -moz-appearance: none;
-              background-color: #50a5ad;
+              background-color: var(--Colorbutton);
             }
             #fs-frm label,
             #fs-frm legend,
@@ -2062,8 +2051,8 @@ grid-template:
             #fs-frm textarea,
             #fs-frm #card-element {
               border: 0px;
-              border-bottom: 1px solid #fff;
-              background-color: #50a5ad;
+              border-bottom: 1px solid white;
+              background-color: var(--Colorbutton);
               padding: 2px 1px;
               margin-bottom: 1.5rem;
               width: 91%;
@@ -2072,7 +2061,7 @@ grid-template:
             #fs-frm input:focus,
             #fs-frm select:focus,
             #fs-frm textarea:focus {
-              background-color: #50887f;
+              background-color: var(--Colorbuttonhover);
               outline-style: solid;
               outline-width: thin;
               outline-color: gray;
@@ -2082,7 +2071,7 @@ grid-template:
             #fs-frm [type="email"] {
               width: 91%;
               border: 0px;
-              border-bottom: 1px solid #fff;
+              border-bottom: 1px solid white;
               font-size: 21px;
             }
             #fs-frm [type="button"],
@@ -2106,18 +2095,18 @@ grid-template:
               width: 200px;
               height: 60px;
               font-size: 22px;
-              background-color: #97c5ad;
+              background-color: var(--Colorfont);
               border: 0px;
             }
             #fs-frm [type="submit"]:hover,
             #fs-frm [type="reset"]:hover {
-              background-color: #50887f;
-              transition: all .4s linear;
+              background-color: var(--Colorbuttonhover);
+              transition: var(--Trans);
             }
             #fs-frm select {
               text-transform: none;
               border: 0px;
-              border-bottom: 1px solid #fff;
+              border-bottom: 1px solid white;
               font-size: 18px;
             }
             
@@ -2167,7 +2156,7 @@ grid-template:
 
 .informconvert:hover {
   background-color: rgba(212, 212, 212, 0.4);
-  transition: all .4s linear;
+  transition: var(--Trans);
 }
 
 
