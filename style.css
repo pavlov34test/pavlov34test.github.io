@@ -84,9 +84,7 @@
   list-style:none;
 }
 
-body {
-  
-}
+
 
 p {
   font-family: var(--DidactGothic), roboto;
@@ -253,9 +251,7 @@ header {
 
  Body content - - - - */
 
-.content {
-  
-}
+
 
  /* - - - - Body content 
 
@@ -334,6 +330,8 @@ Footer - - - - */
   margin-left: 231px;
   margin-top: -60px;
   filter: brightness(50%);
+  color: white;
+  font-size: 18px;
 }
 
 .footer-contact1img:hover {
@@ -473,7 +471,7 @@ Footer - - - - */
 .content1 {
   width: 100%;
   height: 830px;
-  background-image: url(/img/background1.jpg);
+  background-image: url(/img/background3.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -520,7 +518,7 @@ Footer - - - - */
 
 .content1-offer button {
   margin: -10px 30px;
-  width: 200px;
+  width: 220px;
   height: 50px;
   font-size: 16px;
   color: white;
@@ -574,8 +572,8 @@ Footer - - - - */
 
 
 .content2-container-left-message>p{
-  margin: 35px 30px;
-  font-size: 14px;
+  margin: 20px 30px;
+  font-size: 16px;
   color: black;
   line-height: 1.8em;
   text-align: center;
@@ -638,7 +636,7 @@ Footer - - - - */
 }
 
 .content3-div1 p {
-  font-size: 16px;
+  font-size: 18px;
   margin: 30px 20px;
 }
 
@@ -677,7 +675,7 @@ Footer - - - - */
 
 .content4-header1 p {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   margin: 15px 60px;
 }
 
@@ -702,13 +700,13 @@ html, body {
 
 .content4-side2 p {
   margin: 12px 10px;
-  font-size: 19px;
+  font-size: 20px;
   color: white;
 }
 
 .content4-side2 p a {
   color: black;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .content4-side2 p a:hover {
@@ -818,8 +816,8 @@ img:nth-child(2){animation-delay:10s}
 
 .content4-header2 p {
   display: inline-block;
-  font-size: 40px;
-  margin: 50px 50px;
+  font-size: 28px;
+  margin: 50px 20px;
   line-height: 1.4em;
   font-family: var(--LibelSuitRg);
   color: white;
@@ -866,9 +864,9 @@ img:nth-child(2){animation-delay:10s}
 }
 
 .content5-div1 p:last-child {
-  font-family: "DearJoe";
+  font-family: sans-serif;
   color: var(--Colorbutton);
-  font-size: 80px;
+  font-size: 30px;
   margin: 10px 25px;
 }
 
@@ -907,6 +905,11 @@ img:nth-child(2){animation-delay:10s}
 
 }
 
+.content5-div8 video {
+  width: 250px;
+  height: 400px;
+}
+
 .content5-bigp {
   font-size: 60px;
   color: var(--Colorbutton);
@@ -915,12 +918,21 @@ img:nth-child(2){animation-delay:10s}
 
 .content5-p1 {
   margin: 10px 0px;
-  font-size: 20px;
+  font-size: 23px;
   font-family: var(--LibelSuitRg);
 }
 
 .content5-p2 {
-  font-size: 15px;
+  font-size: 17px;
+}
+
+.content5-p2 a {
+  font-size: 20px;
+  color: var(--Colorbutton);
+}
+
+.content5-p2 a:hover {
+  color: var(--Colorbuttonhover);
 }
 
 
@@ -994,7 +1006,7 @@ img:nth-child(2){animation-delay:10s}
 
 .content8-price h4 {
   font-family: var(--LibelSuitRg);
-  font-size: 38px;
+  font-size: 30px;
   line-height:1.1em;
   margin: 45px 0px;
   text-align: left;
@@ -1022,7 +1034,7 @@ img:nth-child(2){animation-delay:10s}
 
 .content8-img {
   grid-area: img;
-  background-image: url(/img/pricehome.jpg);
+  background-image: url(/img/pricehome3.jpg);
   background-repeat: no-repeat;
   margin: 80px 0px;
 }
@@ -2176,5 +2188,50 @@ grid-template:
   font-family: roboto;
 }
 
+/*PopUp*/
+body {
+	margin:0;
+	text-align:left;
+}
 
+	body button {
+		cursor:pointer;
+		margin:40px 0 0 0;
+	}
 
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+}
+
+	.popup_bg {
+		background:rgba(0,0,0,0.4);
+		position:absolute;
+		z-index:1;
+		height:100%;
+		width:100%;
+	}
+	
+	
+	.form {
+		position: relative;
+		margin: 100px auto;
+		z-index:2;
+		width:300px;
+		padding:40px 20px;
+		background:#97c5ad;
+		border:1px solid #666666;
+		border-radius:10px;
+		box-shadow:0 0 2px rgba(0,0,0,0.5);
+	}
+
+		.form input {
+			width:96%;
+			padding:5px 2%;
+			margin:10px 0;
+			border-radius:4px;
+		}
