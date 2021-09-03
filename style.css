@@ -314,8 +314,12 @@ Footer - - - - */
   margin: 10px 2px;
 }
 
+.footer-contact0 img {
+  width: 35px;
+}
+
 .footer-contact0 img:hover {
-  width: 49px;
+  width: 38px;
 }
 
 .footer-contact0 i{
@@ -1406,7 +1410,7 @@ grid-template:
 }
 
 .serviceshome-side1s-img {
-  background-image: url(/img/manicure.jpg);
+  background-image: url(/img/manicure.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1451,7 +1455,7 @@ grid-template:
 }
 
 .serviceshome-side2s-img {
-  background-image: url(/img/pedicure.jpg);
+  background-image: url(/img/pedicure.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1495,7 +1499,7 @@ grid-template:
 }
 
 .serviceshome-side3s-img {
-  background-image: url(/img/dopy.jpg);
+  background-image: url(/img/extencions.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1540,7 +1544,7 @@ grid-template:
 }
 
 .serviceshome-side4s-img {
-  background-image: url(/img/nailart.jpg);
+  background-image: url(/img/nailart.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1585,7 +1589,7 @@ grid-template:
 }
 
 .serviceshome-side5s-img {
-  background-image: url(/img/laque.jpg);
+  background-image: url(/img/additional.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1905,8 +1909,43 @@ grid-template:
   padding: 10px;
 }
 
-.imgpost {
-  background-image: url(/img/parking.png);
+.imgpost1 {
+  background-image: url(/img/imgpost1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.imgpost2 {
+  background-image: url(/img/imgpost2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.imgpost3 {
+  background-image: url(/img/imgpost3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.imgpost4 {
+  background-image: url(/img/imgpost4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.imgpost5 {
+  background-image: url(/img/imgpost5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.imgpost6 {
+  background-image: url(/img/imgpost6.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -1924,6 +1963,7 @@ grid-template:
 
 .textpost {
   background-color: var(--Colorbutton);
+  height: 250px;
 
 }
 
