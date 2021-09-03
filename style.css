@@ -2023,6 +2023,7 @@ grid-template:
 
 .cont2 {
   grid-area: cont2;
+  margin-top: 27px;
 }
 
 .cont3 {
