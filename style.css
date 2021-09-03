@@ -292,7 +292,7 @@ Footer - - - - */
 
 .footer-contact {
   width: 100%;
-  height: 320px;
+  height: 420px;
   background-color: var(--Colorbuttonhover);
 }
 
@@ -314,10 +314,21 @@ Footer - - - - */
   margin: 10px 2px;
 }
 
+.footer-contact0 i{
+  width: 370px;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 100px;
+}
+
+
+
 .footer-contact1 {
   grid-area: contact1;
   position: relative;
   height: 100px;
+  margin-top: 38px;
 }
 
 .footer-contact1img {
@@ -327,11 +338,12 @@ Footer - - - - */
   width: 386px;
   height: 253px;
   position: absolute;
-  margin-left: 231px;
-  margin-top: -60px;
+  margin-left: 290px;
+  margin-top: 10px;
   filter: brightness(50%);
   color: white;
   font-size: 18px;
+  margin-top: -66px;
 }
 
 .footer-contact1img:hover {
