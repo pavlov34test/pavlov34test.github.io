@@ -314,6 +314,10 @@ Footer - - - - */
   margin: 10px 2px;
 }
 
+.footer-contact0 img:hover {
+  width: 49px;
+}
+
 .footer-contact0 i{
   width: 370px;
   display: inline-block;
@@ -321,8 +325,6 @@ Footer - - - - */
   color: #fff;
   margin-left: 100px;
 }
-
-
 
 .footer-contact1 {
   grid-area: contact1;
@@ -332,7 +334,7 @@ Footer - - - - */
 }
 
 .footer-contact1img {
-  background-image: url(/img/parking1.png);
+  background-image: url(/img/parking.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 386px;
