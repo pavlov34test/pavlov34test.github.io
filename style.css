@@ -84,7 +84,10 @@
   list-style:none;
 }
 
-
+body {
+  border-left: 0px;
+  border-right: 0px;
+}
 
 p {
   font-family: var(--DidactGothic), roboto;
@@ -365,7 +368,7 @@ Footer - - - - */
 .footer-contact1 p {
   font-family: var(--LibelSuitRg);
   color: white;
-  font-size: 23px;
+  font-size: 16px;
   margin: 15px 0px;
 }
 
@@ -382,6 +385,7 @@ Footer - - - - */
 
 .footer-contact2 {
   grid-area: contact2;
+  margin-top: -80px;
 }
 
 .footer-contact2 p a:hover {
@@ -397,7 +401,7 @@ Footer - - - - */
 .footer-contact2 p {
   font-family: var(--LibelSuitRg);
   color: white;
-  font-size: 23px;
+  font-size: 18px;
   margin: 15px 60px;
 }
 
@@ -1681,52 +1685,52 @@ grid-template:
 }
 
 .serv1manicureimg1 {
-  background-image: url(/img/serv1manicureimg1.jpg);
+  background-image: url(/img/serv1manicureimg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1manicureimg2 {
-  background-image: url(/img/serv1manicureimg2.jpg);
+  background-image: url(/img/serv1manicureimg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 
 .serv1pedicureimg1 {
-  background-image: url(/img/serv1pedicureimg1.jpg);
+  background-image: url(/img/serv1pedicureimg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1pedicureimg2 {
-  background-image: url(/img/serv1pedicureimg2.jpg);
+  background-image: url(/img/serv1pedicureimg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 
 .serv1nailartimg1 {
-  background-image: url(/img/serv1nailartimg1.jpg);
+  background-image: url(/img/serv1nailartimg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1nailartimg2 {
-  background-image: url(/img/serv1nailartimg2.jpg);
+  background-image: url(/img/serv1nailartimg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 
 .serv1extensionsimg1 {
-  background-image: url(/img/serv1extensionsimg1.jpg);
+  background-image: url(/img/serv1extensionsimg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1extensionsimg2 {
-  background-image: url(/img/serv1extensionsimg2.jpg);
+  background-image: url(/img/serv1extensionsimg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -1739,7 +1743,7 @@ grid-template:
   height: 100%;
 }
 .serv1additionalimg2 {
-  background-image: url(/img/serv1additionalimg2.jpg);
+  background-image: url(/img/serv1additionalimg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -1866,8 +1870,8 @@ grid-template:
 }
 
 .blogimg {
-  background-image: url(/img/header-fon.jpg);
-  height: 260px;
+  background-image: url(/img/header-fon.png);
+  height: 274px;
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -1971,12 +1975,14 @@ grid-template:
   font-size: 27px;
   font-family: var(--LibelSuitRg);
   padding: 10px;
+  color: white;
 }
 
 .textpost p {
   font-size: 16px;
   font-family: var(--DidactGothic);
   padding: 10px;
+  color: white;
 }
 
 .textpost a {
@@ -1995,6 +2001,7 @@ grid-template:
   font-size: 16px;
   font-family: var(--DidactGothic);
   padding: 10px;
+  color: white;
 }
 
 /*Contact*/
