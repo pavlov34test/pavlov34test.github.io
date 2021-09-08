@@ -552,10 +552,9 @@ Footer - - - - */
 .content2 {
   width: 100%;
   height: 740px;
-  background-color: var(--Colorfont);
-
+  background-color: #54b1c5;
   margin-top: -2px;
-  border-top: 1px solid #cfc;
+
 }
 
 .content2-containercenter{
@@ -618,7 +617,7 @@ Footer - - - - */
   height: 550px;
   display: inline-block;
   margin-left: 4px;
-  background-image: url(/img/home.png);
+  background-image: url(/img/home.jpg);
   background-repeat: no-repeat;
 }
 
@@ -1704,7 +1703,7 @@ grid-template:
 }
 
 .serviceshome-side1s-img {
-  background-image: url(/img/manicure.png);
+  background-image: url(/img/manicure.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1749,7 +1748,7 @@ grid-template:
 }
 
 .serviceshome-side2s-img {
-  background-image: url(/img/pedicure.png);
+  background-image: url(/img/pedicure.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1793,7 +1792,7 @@ grid-template:
 }
 
 .serviceshome-side3s-img {
-  background-image: url(/img/extencions.png);
+  background-image: url(/img/extencions.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1838,7 +1837,7 @@ grid-template:
 }
 
 .serviceshome-side4s-img {
-  background-image: url(/img/nailart.png);
+  background-image: url(/img/nailart.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1883,7 +1882,7 @@ grid-template:
 }
 
 .serviceshome-side5s-img {
-  background-image: url(/img/additional.png);
+  background-image: url(/img/additional.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -1975,68 +1974,69 @@ grid-template:
 }
 
 .serv1manicureimg1 {
-  background-image: url(/img/serv1manicureimg1.png);
+  background-image: url(/img/serv1manicureimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1manicureimg2 {
-  background-image: url(/img/serv1manicureimg2.png);
+  background-image: url(/img/serv1manicureimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 1150px;
+  margin: 10px;
 }
 
 .serv1pedicureimg1 {
-  background-image: url(/img/serv1pedicureimg1.png);
+  background-image: url(/img/serv1pedicureimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1pedicureimg2 {
-  background-image: url(/img/serv1pedicureimg2.png);
+  background-image: url(/img/serv1pedicureimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 1000px;
 }
 
 .serv1nailartimg1 {
-  background-image: url(/img/serv1nailartimg1.png);
+  background-image: url(/img/serv1nailartimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1nailartimg2 {
-  background-image: url(/img/serv1nailartimg2.png);
+  background-image: url(/img/serv1nailartimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 450px;
 }
 
 .serv1extensionsimg1 {
-  background-image: url(/img/serv1extensionsimg1.png);
+  background-image: url(/img/serv1extensionsimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1extensionsimg2 {
-  background-image: url(/img/serv1extensionsimg2.png);
+  background-image: url(/img/serv1extensionsimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 600px;
 }
 
 .serv1additionalimg1 {
-  background-image: url(/img/serv1additionalimg1.png);
+  background-image: url(/img/serv1additionalimg1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
 .serv1additionalimg2 {
-  background-image: url(/img/serv1additionalimg2.png);
+  background-image: url(/img/serv1additionalimg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 600px;
 }
 
 
@@ -2160,7 +2160,7 @@ grid-template:
 }
 
 .blogimg {
-  background-image: url(/img/header-fon.png);
+  background-image: url(/img/header-fon.jpg);
   height: 274px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2204,42 +2204,42 @@ grid-template:
 }
 
 .imgpost1 {
-  background-image: url(/img/imgpost1.png);
+  background-image: url(/img/imgpost1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .imgpost2 {
-  background-image: url(/img/imgpost2.png);
+  background-image: url(/img/imgpost2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .imgpost3 {
-  background-image: url(/img/imgpost3.png);
+  background-image: url(/img/imgpost3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .imgpost4 {
-  background-image: url(/img/imgpost4.png);
+  background-image: url(/img/imgpost4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .imgpost5 {
-  background-image: url(/img/imgpost5.png);
+  background-image: url(/img/imgpost5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
 
 .imgpost6 {
-  background-image: url(/img/imgpost6.png);
+  background-image: url(/img/imgpost6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
