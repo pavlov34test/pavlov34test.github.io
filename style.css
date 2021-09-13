@@ -2293,6 +2293,24 @@ grid-template:
   color: white;
 }
 
+
+
+
+.informtext1 {
+  padding: 70px;
+}
+
+.informtext1 h4 {
+  margin: 10px auto;
+  font-size: 25px;
+  font-family: verdana;
+}
+
+.informtext1 p {
+  margin: 10px auto;
+  font-size: 17px;
+  font-family: roboto;
+
 /*Contact*/
 
 .contactwrapper {
@@ -2775,3 +2793,7 @@ body {
       font-size: 16px;
       margin: 5px 20px; 
     }
+
+
+   
+
