@@ -20,15 +20,21 @@
   <div class="popup">
     <div class="popup_bg"></div>
     <div class="form">
-      <form>
+      <form name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/mleapgbg" method="post">
         <p>Feedback form</p>
-        <input type="text" placeholder="Full name">
-        <input type="text" placeholder="Telephone number">
-        <textarea style="margin: -1px; width: 301px; height: 90px;"></textarea><br>
+        <fieldset id="fs-frm-inputs">
+        <input type="text" name="name" id="full-name" required="" placeholder="Full name">
+        <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+        <textarea style="margin: -1px; width: 301px; height: 90px;" name="complaint" id="complaint" placeholder="Your text" required=""></textarea><br>
+        </fieldset>
         <div class="check">
-        <input type="checkbox" name="policy"> <p>I'm reading <a href="/policy.html">POLICY</a></p>
+        <input type="checkbox" name="policy"> <p>I'm reading POLICY</p><a href="/policy.html">Read the POLICY</a>
         </div>
         <input type="submit" value="Send">
+        <br>
+        <hr>
+        <p>Special Offer #2</p>
+        <p>Leave us a review on either Google, Facebook, or Instagram on the day of your service and receive one of our available designs on two finger nails for free during your next visit.</p>
       </form>
     </div>
   </div>
@@ -47,7 +53,8 @@
 <div class="teamwrapper">
     
     <div class="team1">
-        <button>Zapisatsa</button>
+        <a href="#"><button onClick="showPopup();">Text Us</button></a>
+        <script src="popup.js"></script>
     </div>
 
     <div class="team2">
@@ -86,6 +93,7 @@
             <span style="background-image: url('/img/sertificat1tatiana2.jpeg')"></span>
           </a>
     </div>
+    <!--
     <div class="team3img3">
         <a href="#img2">
             <img src="/img/sertificat1tatiana.jpeg">
@@ -118,6 +126,7 @@
             <span style="background-image: url('/img/sertificat1tatiana.jpeg')"></span>
           </a>
     </div>
+    -->
 </div>
 
 
