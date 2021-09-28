@@ -509,8 +509,8 @@ Footer - - - - */
 }
 
 .content1-offer-text2 p {
-    font-size: 15px;
-    margin: 10px 0px;
+    font-size: 17px;
+    margin: 8px 0px;
     font-family: var(--LibelSuitRg);
     color: white;
 }
@@ -568,8 +568,8 @@ Footer - - - - */
 }
 
 .content2-container-left-message>p {
-    margin: 20px 30px;
-    font-size: 16px;
+    margin: 10px 30px;
+    font-size: 18px;
     color: black;
     line-height: 1.8em;
     text-align: center;
@@ -1915,8 +1915,8 @@ Media Queries   - - - - */
 }
 
 #manicure {
-    font-size: 20px;
-    font-family: var(--Cursive);
+    font-size: 9px;
+    font-family: fantasy;
     margin: 10px 30px;
 }
 
@@ -1952,12 +1952,12 @@ Media Queries   - - - - */
 
 .pricelist {
     text-align: left;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .pricelist p {
     font-size: 19px;
-    margin: 0px auto;
+    margin: 10px auto;
 }
 
 .pricelist p:nth-child(2) {
