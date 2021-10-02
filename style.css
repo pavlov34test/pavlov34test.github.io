@@ -1572,7 +1572,7 @@ Media Queries   - - - - */
 }
 
 .serviceshome-side1s-img {
-    background-image: url(/img/manicure.jpeg);
+    background-image: url(/img/manicure.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -1698,7 +1698,7 @@ Media Queries   - - - - */
 }
 
 .serviceshome-side4s-img {
-    background-image: url(/img/nailart.jpg);
+    background-image: url(/img/nailart2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -1740,7 +1740,7 @@ Media Queries   - - - - */
 }
 
 .serviceshome-side5s-img {
-    background-image: url(/img/additional.jpg);
+    background-image: url(/img/additionalserv.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -1934,6 +1934,10 @@ Media Queries   - - - - */
 .serv3 {
     grid-area: serv3;
     margin-top: 20px;
+}
+
+.content5-div1 img {
+    width: 170px;
 }
 
 .serv3 h4 {
