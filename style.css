@@ -479,8 +479,8 @@ Footer - - - - */
 .content1-offer {
     width: 600px;
     height: 500px;
-    margin: 170px 260px;
-    border: 10px solid var(--Colorbutton);
+    margin: 120px 220px;
+    border: 3px solid rgba(25, 210, 226, 0.6);
 }
 
 .content1-offer-h1 {
