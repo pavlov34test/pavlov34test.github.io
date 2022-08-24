@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 11/07/2019 07:14
+  	Creation date: 22/02/2020 23:01
   	*/
 
 @font-face {
@@ -24,20 +24,15 @@
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-        font-family: Flaticon;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-balance:before { content: "\f100"; }
-.flaticon-auction:before { content: "\f101"; }
-.flaticon-courthouse:before { content: "\f102"; }
-.flaticon-law:before { content: "\f103"; }
+.flaticon-car-service:before { content: "\f100"; }
+.flaticon-battery:before { content: "\f101"; }
+.flaticon-tyre:before { content: "\f102"; }
+.flaticon-tow-truck:before { content: "\f103"; }
+.flaticon-car-engine:before { content: "\f104"; }
+.flaticon-repair:before { content: "\f105"; }
