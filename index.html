@@ -28,20 +28,23 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-3 d-flex align-items-center">
-                    <a class="navbar-brand" href="index.html">Большегруз34.рф<span>.</span></a>
+                    <a class="navbar-brand" href="index.html">БОЛЬШЕГРУЗ<span>.</span></a>
                 </div>
                 <div class="col-md-7">
                     <div class="row">
                         <div class="col">
                             <div class="top-wrap d-flex">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
-                                <div class="text"><span>Адрес</span><span>Волгоградская область, Волжский, улица 7-я Автодорога, 26</span></div>
+                                <div class="text"><span>Адрес</span><span><a href="https://yandex.ru/maps/-/CCUVIHWqPB">Волгоградская область, Волжский, улица 7-я Автодорога, 26</a></span></div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="top-wrap d-flex">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
-                                <div class="text"><span>Телефон</span><span>+7 906 172-84-99</span></div>
+                                <div class="text" id="glv">
+                                    <span>Запчасти</span><span><a href="tel:+79061728499">+7 906 172-84-99</a></span>
+                                    <span>Сервис</span><span><a href="tel:+79061728847">+7 906 172-88-47</a></span>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-end align-items-center">
@@ -70,12 +73,11 @@
             </form>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link">Главная</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">О нас</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Сервис</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Блог</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                    <li class="nav-item active"><a href="#glv" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#bio" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#service" class="nav-link">Сервис</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -89,8 +91,8 @@
                     <div class="row no-gutters slider-text align-items-center justify-content-start">
                         <div class="col-md-6 ftco-animate">
                             <div class="text w-100">
-                                <h2>Мы занимаемся</h2>
-                                <h1 class="mb-4">Ремонтом грузового коммерческого транспорта в Волжском</h1>
+                                <h2></h2>
+                                <h1 class="mb-4">Ремонт грузового коммерческого транспорта в Волжском</h1>
                                 <p><a href="#" class="btn btn-primary">Оставить заявку</a></p>
                             </div>
                         </div>
@@ -104,7 +106,7 @@
                     <div class="row no-gutters slider-text align-items-center justify-content-start">
                         <div class="col-md-6 ftco-animate">
                             <div class="text w-100">
-                                <h2>У нас есть</h2>
+                                <h2></h2>
                                 <h1 class="mb-4">Грузовая автомойка</h1>
                                 <p><a href="#" class="btn btn-primary">Оставить заявку</a></p>
                             </div>
@@ -123,9 +125,9 @@
                         <div class="icon d-flex align-items-center justify-content-center">
                             <i class="flaticon-repair"></i>
                         </div>
-                        <h2 class="mb-0">Как заключить договор? <span>Для юридических лиц</span></h2>
+                        <h2 class="mb-0">Заключить договор <span>Для юридических лиц</span></h2>
                     </div>
-                    <a href="#" class="bg-primary btn-custom d-flex align-items-center"><span>Заявка</span></a>
+                    <a href="#message" class="bg-primary btn-custom d-flex align-items-center"><span>Заявка</span></a>
                 </div>
             </div>
         </div>
@@ -135,8 +137,8 @@
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <span class="subheading">Сервис</span>
-                    <h2>Оказываем услуги</h2>
+                    <span class="subheading"></span>
+                    <h2 id="service">Оказываем услуги</h2>
                 </div>
             </div>
             <div class="row">
@@ -146,8 +148,8 @@
                             <span class="flaticon-car-service"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Замена жидкостей</h3>
-                            <p>Замена масла и остальных жидкостей.</p>
+                            <h3 class="heading">Грузовая автомойка</h3>
+                            <p>Технологическая и полная мойка, промывка радиаторов</p>
 
                         </div>
                     </div>
@@ -156,8 +158,8 @@
                             <span class="flaticon-tyre"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Шиномонтаж</h3>
-                            <p>Грузовой шиномонтаж.</p>
+                            <h3 class="heading">Грузовой шиномонтаж</h3>
+                            <p>Все виды шиномонтажных работ</p>
 
                         </div>
                     </div>
@@ -169,8 +171,8 @@
                             <span class="flaticon-battery"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Аккумулятор</h3>
-                            <p>Обслуживание аккумуляторных батарей.</p>
+                            <h3 class="heading">Автоэлектрика</h3>
+                            <p>Компьютерная диагностика, ремонт жгутов, капитальное восстановление и замена проводки прицепов</p>
 
                         </div>
                     </div>
@@ -180,7 +182,7 @@
                         </div>
                         <div class="media-body pl-3">
                             <h3 class="heading">Ремонт двигателя</h3>
-                            <p>Все виды ремонта дизельных агрегатов.</p>
+                            <p>Регулировка клапанов, все виды ремонта дизельных агрегатов</p>
 
                         </div>
                     </div>
@@ -192,8 +194,8 @@
                             <span class="flaticon-tow-truck"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Эвакуатор</h3>
-                            <p>Эвакуация автомобилей.</p>
+                            <h3 class="heading">Холодильное оборудование</h3>
+                            <p>Ремонт и обслуживание ХОУ и кондиционеров, заправка</p>
 
                         </div>
                     </div>
@@ -202,8 +204,8 @@
                             <span class="flaticon-repair"></span>
                         </div>
                         <div class="media-body pl-3">
-                            <h3 class="heading">Капитальный ремонт</h3>
-                            <p>Производим капитальный ремонт двигателя.</p>
+                            <h3 class="heading">Ремонт ходовой</h3>
+                            <p>Все виды слесарных и сварочных работ. Грузовики, прицепы и полуприцепы</p>
 
                         </div>
                     </div>
@@ -216,8 +218,8 @@
         <div class="container">
             <div class="row d-flex no-gutters">
                 <div class="col-md-6 d-flex">
-                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0" style="background-image:url(images/about.jpg);">
-                        <a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0" style="background-image:url(images/a.jpg);">
+                        <a href="#video" class=" popup-vimeo d-flex justify-content-center align-items-center">
                             <span class="fa fa-play"></span>
                         </a>
                     </div>
@@ -225,30 +227,42 @@
                 <div class="col-md-6 pl-md-5">
                     <div class="row justify-content-start py-5">
                         <div class="col-md-12 heading-section ftco-animate">
-                            <span class="subheading">Добро пожаловать</span>
-                            <h2 class="mb-4">Предоставляем услуги 1</h2>
-                            <p> текст 1 </p>
+                            <span class="subheading"></span>
+                            <h2 class="mb-4" id="bio">Коротко о нас</h2>
+                            <p> Наши преимущества </p>
                             <div class="tabulation-2 mt-4">
                                 <ul class="nav nav-pills nav-fill d-md-flex d-block">
                                     <li class="nav-item mb-md-0 mb-2">
-                                        <a class="nav-link active py-2" data-toggle="tab" href="#home1">Преимущество 1</a>
+                                        <a class="nav-link active py-2" data-toggle="tab" href="#home1">6 полноразмерных ремонтных постов</a>
                                     </li>
                                     <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                                        <a class="nav-link py-2" data-toggle="tab" href="#home2">Преимущество 2</a>
+                                        <a class="nav-link py-2" data-toggle="tab" href="#home2">Склад запасных частей</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Преимущество 3</a>
+                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Клиентская зона отдыха</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home4">Гарантии и рекомендации</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home5">Режим работы</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content rounded mt-2">
                                     <div class="tab-pane container p-0 active" id="home1">
-                                        <p>Какое-то преимущество</p>
+                                        <p>Которые позволяют разместить тягач и прицеп одновременно, не расцепляя, что снижает время затрачиваемое на ремонт</p>
                                     </div>
                                     <div class="tab-pane container p-0 fade" id="home2">
-                                        <p>Какое-то преимущество</p>
+                                        <p>Запасные части и расходные материалы от производителей, проверенных на личном опыте, в наличии </p>
                                     </div>
                                     <div class="tab-pane container p-0 fade" id="home3">
-                                        <p>Какое-то преимущество</p>
+                                        <p>Оборудована для более комфортного ожидания ремонта Вашего транспортного средства</p>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="home4">
+                                        <p>Даем гарантию на выполненные работы, предлагаем бесплатную диагностику и даем рекомендации к дальнейшему ремонту</p>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="home5">
+                                        <p>Мы работаем для Вас ежедневно с 8:00 до 20:00 без перерывов и выходных</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,27 +279,27 @@
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <strong class="number" data-number="3">0</strong>
+                            <strong class="number" data-number="12">0</strong>
                         </div>
                         <div class="text">
-                            <span>Лет на рынке</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18 text-center">
-                        <div class="text">
-                            <strong class="number" data-number="340">0</strong>
-                        </div>
-                        <div class="text">
-                            <span>Обслужено раз</span>
+                            <span>постов</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
-                            <strong class="number" data-number="342">0</strong>
+                            <strong class="number" data-number="100">0</strong><i class="iwhite">m²</i>
+                        </div>
+                        <div class="text">
+                            <span>Склад запчастей</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 text-center">
+                        <div class="text">
+                            <strong class="number" data-number="243">0</strong>
                         </div>
                         <div class="text">
                             <span>Довольных клиентов</span>
@@ -311,7 +325,7 @@
         <div class="container">
             <div class="row d-md-flex justify-content-end">
                 <div class="col-md-12 col-lg-6 half p-3 py-5 pl-lg-5 ftco-animate heading-section heading-section-white">
-                    <span class="subheading">Консультация</span>
+                    <span class="subheading" id="message">Консультация</span>
                     <h2 class="mb-4">Оставьте заявку</h2>
                     <form action="#" class="appointment">
                         <div class="row">
@@ -324,9 +338,11 @@
 	                      	<option value="">Выберите услугу</option>
 	                        <option value="">Замена масла</option>
 	                        <option value="">Ремонт двигателя</option>
-	                        <option value="">Замена батареи</option>
+	                        <option value="">Диагностика</option>
 	                        <option value="">Шиномонтаж</option>
-	                        <option value="">Капитальный ремонт</option>
+	                        <option value="">Ремонт ходовой</option>
+                            <option value="">Грузовая мойка</option>
+                            <option value="">Ремонт ХОУ</option>
 	                      </select>
                                         </div>
                                     </div>
@@ -379,7 +395,7 @@
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-                    <span class="subheading">Отзывы</span>
+                    <span class="subheading"></span>
                     <h2>Довольные клиенты</h2>
                 </div>
             </div>
@@ -390,7 +406,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                                 <div class="text">
-                                    <p class="mb-4">Чево то там.</p>
+                                    <p class="mb-4">Отличная станция тех. обслуживания. Есть всё необходимое для качественного ремонта. Работа обслуживающего персонала на высоте, оставили исключительно положительные эмоции. Ребята, продолжайте в том же духе!!!!</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                                         <div class="pl-3">
@@ -405,7 +421,7 @@
                             <div class="testimony-wrap py-4">
                                 <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                                 <div class="text">
-                                    <p class="mb-4">Чево то там.</p>
+                                    <p class="mb-4">Отличный сервис. Быстро подобрали сложную запчасть когда в других сервисах уже по телефону отказывались пробывать искать мою запчасть.</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                                         <div class="pl-3">
@@ -471,8 +487,8 @@
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <span class="subheading">прайс-лист</span>
-                    <h2>Цены</h2>
+                    <span class="subheading"></span>
+                    <h2>ПРАЙС-ЛИСТ</h2>
                 </div>
             </div>
             <div class="row">
@@ -480,10 +496,10 @@
                     <div class="block-7">
                         <div class="text-center">
                             <span class="excerpt d-block">Диагностика</span>
-                            <span class="price"><sup>Р</sup> <span class="number">2450</span></span>
+                            <span class="price"> <span class="number">2250</span><sup>Р</sup></span>
 
                             <div class="pricing-text">
-                                <p>Замена всего и вся</p>
+                                <p></p>
                             </div>
 
                             <a href="#" class="btn btn-secondary d-block px-2 py-3">Позвонить</a>
@@ -493,11 +509,11 @@
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="block-7">
                         <div class="text-center">
-                            <span class="excerpt d-block">Ремонт двигателя</span>
-                            <span class="price"><sup>Р</sup> <span class="number">2450</span></span>
+                            <span class="excerpt d-block">Регулировка клапанов</span>
+                            <span class="price"> <span class="number">3500</span><sup>Р</sup></span>
 
                             <div class="pricing-text">
-                                <p>Замена всего и вся</p>
+                                <p></p>
                             </div>
 
                             <a href="#" class="btn btn-secondary d-block px-2 py-3">Позвонить</a>
@@ -508,10 +524,10 @@
                     <div class="block-7">
                         <div class="text-center">
                             <span class="excerpt d-block">Грузовой ремонт</span>
-                            <span class="price"><sup>Р</sup> <span class="number">2450</span></span>
+                            <span class="price"><span class="number">от 1250</span><sup>Р</sup></span>
 
                             <div class="pricing-text">
-                                <p>Замена всего и вся</p>
+                                <p></p>
                             </div>
 
                             <a href="#" class="btn btn-secondary d-block px-2 py-3">Позвонить</a>
@@ -522,16 +538,17 @@
                     <div class="block-7">
                         <div class="text-center">
                             <span class="excerpt d-block">Мойка авто</span>
-                            <span class="price"><sup>Р</sup> <span class="number">850</span></span>
+                            <span class="price"><span class="number"> от 300</span><sup>Р</sup></span>
 
                             <div class="pricing-text">
-                                <p>Замена всего и вся</p>
+                                <p></p>
                             </div>
 
                             <a href="#" class="btn btn-secondary d-block px-2 py-3">Позвонить</a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -577,8 +594,8 @@
                         </a>
                         <div class="desc w-100 px-4">
                             <div class="text w-100 mb-3">
-                                <span>Шиномонтаж</span>
-                                <h2><a href="#">Грузовой шиномонтаж</a></h2>
+                                <span>Грузовой шиномонтаж</span>
+                                <h2><a href="#">Все виды шиномонтажных работ</a></h2>
                             </div>
                         </div>
                     </div>
@@ -591,8 +608,8 @@
                         </a>
                         <div class="desc w-100 px-4">
                             <div class="text w-100 mb-3">
-                                <span>Капитальный ремонт</span>
-                                <h2><a href="#">Капитальный ремонт двигателя</a></h2>
+                                <span>Ремонт ходовой</span>
+                                <h2><a href="#">Грузовики, прицепы и полуприцепы</a></h2>
                             </div>
                         </div>
                     </div>
@@ -606,8 +623,9 @@
             <div class="row mb-5">
                 <div class="col-md-6 col-lg">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="logo"><a href="#">Большегруз34<span>.</span></a></h2>
-                        <p>Чево то там.</p>
+                        <h2 class="logo"><a href="#">БОЛЬШЕГРУЗ<span>.</span></a></h2>
+                        <p>Приглашаем к сотрудничеству юридических лиц.<br> Оплата принимается как наличными или картой, так и по безналичному расчёту
+                        </p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
                             <li class="ftco-animate"><a href="#"><span class="fa fa-vk"></span></a></li>
                         </ul>
@@ -617,22 +635,23 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Сервис</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Масло</a></li>
-                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Шиномонтаж</a></li>
-                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Капитальный ремонт</a></li>
-                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Восстановление покрышек</a></li>
-                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Покраска</a></li>
+                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Грузовая автомойка</a></li>
+                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Автоэлектрика</a></li>
+                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Ремонт ХОУ</a></li>
+                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Грузовой шиномонтаж</a></li>
+                            <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Ремонт ходовой</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Контакты</h2>
+                        <h2 class="ftco-heading-2" id="contact">Контакты</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon fa fa-map-marker"></span><span class="text">Волгоградская область, Волжский, улица 7-я Автодорога, 26</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+7 906 172-84-99</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">bolshegruz34@yandex.ru</span></a></li>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text"><a href="https://yandex.ru/maps/-/CCUVIHWqPB">Волгоградская область, Волжский, улица 7-я Автодорога, 26</a></span></li>
+                                <li><span class="icon fa fa-phone"></span><span class="text"><a href="tel:+79061728499">+7 906 172-84-99</a> ЗАПЧАСТИ</span></li>
+                                <li><span class="icon fa fa-phone"></span><span class="text"><a href="tel:+79061728847">+7 906 172-88-47</a> СЕРВИС</span></li>
+                                <li><a href="mailto:bolshegruz34@yandex.ru"><span class="icon fa fa-paper-plane"></span><span class="text">bolshegruz34@yandex.ru</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -643,11 +662,11 @@
                         <div class="opening-hours">
                             <h4>Рабочик дни:</h4>
                             <p class="pl-3">
-                                <span>Ежедневно : 8:00 to 20:00</span>
+                                <span>Ежедневно : 8:00 до 20:00</span>
                             </p>
-                            <h4>Вакансии:</h4>
+                            <h4></h4>
                             <p class="pl-3">
-                                <span>Мастер приемщик</span>
+                                <span></span>
                             </p>
                         </div>
                     </div>
