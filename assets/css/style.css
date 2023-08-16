@@ -1,6 +1,6 @@
 /**
-* Template Name: Arsha - v4.3.0
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Template Name: PanchWall - v4.3.0
+* Template URL: https://bootstrapmade.com/PanchWall-free-bootstrap-html-template-corporate/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
